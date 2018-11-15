@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.luis.smarthouse.dispositivos">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/device_AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/device_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/device_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/device_AppBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/lightbulb" />
+
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Nuevo Sensor de Luz"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/device_descrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Nuevo Sensor de Luz"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/device_estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_descrip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Nuevo Sensor de Luz"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/device_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_estado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:width="280dp"
+        android:background="#00bfa5"
+        android:onClick="deviceAction"
+        android:text="AGREGAR"
+        android:textColor="#ffffff" />
+</RelativeLayout>

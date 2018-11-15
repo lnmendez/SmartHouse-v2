@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item2_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/luis"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:id="@+id/item2_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item2_img"
+        android:text="Hola"
+        android:paddingLeft="10dp"
+        android:textSize="16dp"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/item2_cargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item2_nombre"
+        android:layout_toRightOf="@+id/item2_img"
+        android:text="Cargo"
+        android:paddingLeft="10dp"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/item2_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item2_cargo"
+        android:layout_toRightOf="@+id/item2_img"
+        android:text="Correo"
+        android:paddingLeft="10dp"
+        android:textSize="12sp" />
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

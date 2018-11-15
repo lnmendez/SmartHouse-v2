@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.luis.smarthouse.add_user">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/adduser_AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/adduser_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/adduser_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/adduser_AppBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/user_circle" />
+
+    <TextView
+        android:id="@+id/adduser_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adduser_img"
+        android:layout_centerHorizontal="true"
+        android:text="Nuevo Usuario"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/adduser_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adduser_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:width="280dp"
+        android:hint="Nombre de Usuario" />
+
+    <EditText
+        android:id="@+id/adduser_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adduser_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="280dp"
+        android:hint="Nueva Contraseña"
+        android:password="true"
+        tools:ignore="Deprecated" />
+
+    <EditText
+        android:id="@+id/adduser_pass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adduser_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="280dp"
+        android:hint="Repetir Contraseña"
+        android:password="true"
+        tools:ignore="Deprecated" />
+
+    <Button
+        android:id="@+id/adduser_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adduser_pass2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="280dp"
+        android:background="#00bfa5"
+        android:text="REGISTRARSE"
+        android:textColor="#ffffff"
+        android:onClick="addUser"/>
+
+</RelativeLayout>

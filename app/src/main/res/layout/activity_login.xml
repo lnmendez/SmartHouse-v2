@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.luis.smarthouse.login">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/login_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="Smart House"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/login_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_appname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:width="280dp"
+        android:hint="Usuario" />
+
+    <EditText
+        android:id="@+id/login_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="280dp"
+        android:hint="Contraseña"
+        android:password="true"
+        tools:ignore="Deprecated" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="280dp"
+        android:background="#00bfa5"
+        android:text="Ingresar"
+        android:textColor="#ffffff"
+        android:onClick="launchMainActivity"/>
+
+    <TextView
+        android:id="@+id/login_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:text="REGISTRARSE"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="launchNewUser"/>
+
+</RelativeLayout>
